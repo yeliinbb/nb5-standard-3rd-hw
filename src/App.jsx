@@ -29,7 +29,7 @@ function App() {
       <input
         type="number"
         value={minAge}
-        onChange={(e) => setMinAge(e.target.value)}
+        onChange={(e) => setMinAge(+e.target.value)}
       />{" "}
       살 이상
       <ul>
