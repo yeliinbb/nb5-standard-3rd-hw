@@ -6,19 +6,23 @@ function FilterButtons(
   }
 ) {
   const filterByAge = (minAge) => {
+    setFilteredStudents(initialStudents);
     setFilteredStudents((prev) =>
       prev.filter((student) => {
         return student.age >= minAge;
       })
     );
   };
+
   const filterByGrade = (grade) => {
+    setFilteredStudents(initialStudents);
     setFilteredStudents((prev) =>
       prev.filter((student) => {
         return student.grade === grade;
       })
     );
   };
+
   const resetFilter = () => {
     setFilteredStudents(initialStudents);
   };
